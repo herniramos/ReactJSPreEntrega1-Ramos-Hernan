@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ItemListContainer from './Components/ItemListContainer';
+import Navbar from './Components/NavBar/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'material-icons/iconfont/material-icons.css';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <ItemListContainer greeting="Bienvenido a la tienda Online" />
     </div>
   );
-}
+};
 
 export default App;
