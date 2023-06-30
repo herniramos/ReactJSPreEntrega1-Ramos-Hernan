@@ -4,7 +4,7 @@ import CartWidget from '../CartWidget';
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a className="navbar-brand" href="#">Mi Tienda</a>
+      <a className="navbar-brand" href="#">Tienda</a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -20,7 +20,7 @@ const Navbar = () => {
             <a className="nav-link" href="#">Contacto</a>
           </li>
         </ul>
-        <CartWidget />
+        <CartWidget quantity={1} />
       </div>
     </nav>
   );

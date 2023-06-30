@@ -3,10 +3,11 @@
 import React from 'react';
 import { FiShoppingCart } from 'react-icons/fi';
 
-const CartWidget = () => {
+const CartWidget = ({ quantity }) => {
   return (
     <div className="cart-widget">
-      <FiShoppingCart />
+       <FiShoppingCart className="cart-icon" />
+       <span className="cart-quantity">{quantity}</span>
     </div>
   );
 };
